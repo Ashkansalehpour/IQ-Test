@@ -54,7 +54,7 @@ function EnterQuestions(QS){
     if(QS >= 1 && QS <= MaxQS){
     // Adding Q/A HTML code
     Images.innerHTML= `
-    <span id="TopQuestion">Choose right Answer to calculate your IQ</span>
+    <h2 id="TopQuestion">Choose right Answer to calculate your IQ</h2>
     <div id="questions"></div>
     <h1>Questions</h1>
     <div id="answers"></div>
@@ -154,9 +154,9 @@ function EnterQuestions(QS){
       //Calculate time 
       let SpentTime = (e.SpentTime - WastedTime) / 1000;
       if (SpentTime <= 60) {
-        SpentTime = SpentTime.toFixed(2) + " seconds";
+        TotalTime = SpentTime.toFixed(2) + " seconds";
       } else {
-        SpentTime = (SpentTime / 60).toFixed(2) + " minute(s)";
+        TotalTime = (SpentTime / 60).toFixed(2) + " minute(s)";
       }
     };
   }
