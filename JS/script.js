@@ -6,7 +6,7 @@ document.querySelector("body").innerHTML = `
     <a onclick="TimeCounter(); RemoveIntro(); EnterQuestions(1)" href="#">Start the test</a>
     </section>
     <section id="TotalImages"></section>
-    <section id="result"></section>
+    <section id="result"></section> 
   </div>
 </div>`;
 // Html Selectors
@@ -92,7 +92,7 @@ function EnterQuestions(QS){
       // QS is work as images number which is help us to select questions
       AnswerImages.setAttribute("id",t);
       AnswerImages.setAttribute(
-        "src",
+        "src",  
         "./Images/" + QS + "/" + QS + "-" + t + ".png"
       );
       AnswerImages.setAttribute(
