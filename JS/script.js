@@ -1,3 +1,12 @@
+//  Title: IQ test
+
+//   Version:1.0 v
+
+//   Developer: Ashkan Salehpour
+
+
+
+
 // Adding Html code to making change and add Q/A
 document.querySelector("body").innerHTML = `
 <div class="container"></div>
@@ -173,3 +182,5 @@ function EnterQuestions(QS){
   function RemoveIntro(){
     main.remove();
   }
+
+
